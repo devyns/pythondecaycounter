@@ -1,7 +1,13 @@
 from random import *
+from prettytable import PrettyTable
 rolls = 100
 count = 0
 left = 1
+
+table = PrettyTable()
+
+table.field_names = ["Times Occured", "Particles Decayed", "Particles Left"]
+table.add_row([0, 0, 100,])
 
 while left > 0 and count < 30 :
     count = count + 1
@@ -10,10 +16,14 @@ while left > 0 and count < 30 :
     left = rolls - decay
     rolls = rolls - decay
 
-    print(count,"time(s)")
-    print(decay, "Decayed")
-    print(left, "Left")
-    print()
+    # print(count,"time(s)")
+    # print(decay, "Decayed")
+    # print(left, "Left")
+    # print()
+    table.add_row([count, decay, left,])
+
+print(table)
+
 
 
 
