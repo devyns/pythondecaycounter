@@ -1,10 +1,9 @@
-from random import randint
+from random import *
 rolls = 100
-count = -1
+count = 0
 
 while count < 30:
     count = count + 1
-    number = [randint(1, 6) for p in range(1)]
     list = [randint(1, 6) for p in range(rolls)]
     decay = list.count(1)
     left = rolls - decay
@@ -13,7 +12,6 @@ while count < 30:
     print(count,"time(s)")
     print(decay, "Decayed")
     print(left, "Left")
-    # print(list)
     print()
 
 
