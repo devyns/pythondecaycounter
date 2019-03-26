@@ -10,10 +10,10 @@ while count < 30:
     left = rolls - decay
     rolls = rolls - decay
 
-    print(count)
+    print(count,"time(s)")
     print(decay, "Decayed")
     print(left, "Left")
-    print(list)
+    # print(list)
     print()
 
 
