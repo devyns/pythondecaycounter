@@ -7,7 +7,7 @@ left = 1
 
 table = PrettyTable()
 
-table.field_names = ["Times Occured", "Particles Decayed", "Particles Left"]
+table.field_names = ["Throw", "Particles Decayed", "Particles Left"]
 table.add_row([0, 0, 100,])
 
 while left > 0 and count < 30 :
@@ -23,7 +23,7 @@ while left > 0 and count < 30 :
     # print()
     table.add_row([count, decay, left,])
 
-table.align["Times Occured"] = "l"
+table.align["Throw"] = "l"
 table.align["Particles Decayed"] = "l"
 table.align["Particles Left"] = "l"
 print(table)
