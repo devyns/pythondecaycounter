@@ -1,5 +1,6 @@
 from random import *
 from prettytable import PrettyTable
+
 rolls = 100
 count = 0
 left = 1
@@ -22,6 +23,9 @@ while left > 0 and count < 30 :
     # print()
     table.add_row([count, decay, left,])
 
+table.align["Times Occured"] = "l"
+table.align["Particles Decayed"] = "l"
+table.align["Particles Left"] = "l"
 print(table)
 
 
