@@ -1,6 +1,6 @@
 from random import *
 from prettytable import PrettyTable
-
+from pylab import *
 rolls = 100
 count = 0
 left = 1
@@ -27,7 +27,3 @@ table.align["Throw"] = "l"
 table.align["Particles Decayed"] = "l"
 table.align["Particles Left"] = "l"
 print(table)
-
-
-
-
